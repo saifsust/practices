@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/noTaskButton"
+                android:text="@string/radio_noTask"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <RadioButton
+                android:id="@+id/randomButton"
+                android:text="@string/radio_random"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <RadioButton
+                android:id="@+id/correctionButton"
+                android:text="@string/radio_corection"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</merge>

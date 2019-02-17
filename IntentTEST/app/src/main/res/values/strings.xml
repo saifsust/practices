@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IntentTEST</string>
+    <string name="send">send message</string>
+</resources>

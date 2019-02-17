@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BroatCastExample</string>
+    <string name="send_normal_broadcast">start broadcast</string>
+    <string name="send_ordered_broadcast">stop broadcast</string>
+    <string name="abort_ordered_broadcast">abort broadcast</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="map_width">350dp</dimen>
+    <dimen name="map_height">300dp</dimen>
+    <dimen name="button_width">160dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="side_padding">5dp</dimen>
+    <dimen name="margin_start_top">16dp</dimen>
+    <dimen name="margin_end">16dp</dimen>
+    <dimen name="marigin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+
+
+</resources>

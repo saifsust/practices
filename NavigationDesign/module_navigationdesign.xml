@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_navigationdesign" default="compile.module.navigationdesign">
+  <dirname property="module.navigationdesign.basedir" file="${ant.file.module_navigationdesign}"/>
+  
+  <property name="module.jdk.home.navigationdesign" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.navigationdesign" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.navigationdesign" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.navigationdesign" value="-encoding UTF-8 -source 7 -target 7 ${compiler.args}"/>
+  
+  <property name="navigationdesign.output.dir" value="${module.navigationdesign.basedir}/build/classes/production/NavigationDesign"/>
+  <property name="navigationdesign.testoutput.dir" value="${module.navigationdesign.basedir}/build/classes/test/NavigationDesign"/>
+  
+  <path id="navigationdesign.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="navigationdesign.module.production.classpath">
+    <path refid="${module.jdk.classpath.navigationdesign}"/>
+  </path>
+  
+  <path id="navigationdesign.runtime.production.module.classpath">
+    <pathelement location="${navigationdesign.output.dir}"/>
+  </path>
+  
+  <path id="navigationdesign.module.classpath">
+    <path refid="${module.jdk.classpath.navigationdesign}"/>
+    <pathelement location="${navigationdesign.output.dir}"/>
+  </path>
+  
+  <path id="navigationdesign.runtime.module.classpath">
+    <pathelement location="${navigationdesign.testoutput.dir}"/>
+    <pathelement location="${navigationdesign.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.navigationdesign">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.navigationdesign">
+    <patternset refid="excluded.from.module.navigationdesign"/>
+  </patternset>
+  
+  
+  <target name="compile.module.navigationdesign" depends="compile.module.navigationdesign.production,compile.module.navigationdesign.tests" description="Compile module NavigationDesign"/>
+  
+  <target name="compile.module.navigationdesign.production" depends="register.custom.compilers" description="Compile module NavigationDesign; production classes"/>
+  
+  <target name="compile.module.navigationdesign.tests" depends="register.custom.compilers,compile.module.navigationdesign.production" description="compile module NavigationDesign; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.navigationdesign" description="cleanup module">
+    <delete dir="${navigationdesign.output.dir}"/>
+    <delete dir="${navigationdesign.testoutput.dir}"/>
+  </target>
+</project>

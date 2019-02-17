@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="user_name_tool_tips" formatted="true">Enter User Name</string>
+    <string name="user_mail_tool_tips">Enter User Mail Address</string>
+    <string name="app_name">googlelocations</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map_search">location search</string>
+    <string name="start_navi">start navigation</string>
+    <string name="mapbox_my_public_key" translatable="false">pk.eyJ1Ijoic2FpZnN1c3QiLCJhIjoiY2pycmJhejhxMWRqbzQ5bDluZWR6eHJhYyJ9.eNC_pHV-53KNyoncJaNqKA</string>
+    <string name="mabox_my_private_key" translatable="false">pk.eyJ1Ijoic2FpZnN1c3QiLCJhIjoiY2pycmJkaXIzMXN5MTN5bnRiZW9nMjZjMiJ9.46-kF9nefdSlLW4Fo33FIw</string>
+</resources>
