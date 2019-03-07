@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/sms_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:maxHeight="250dp"
+        android:isScrollContainer="true"
+        android:scrollHorizontally="true"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/phone_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:text="01"
+        app:layout_constraintTop_toBottomOf="@+id/sms_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sms_typer"
+        />
+
+    <EditText
+        android:id="@+id/sms_typer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sms_edittext_field_shape"
+        android:inputType="textMultiLine"
+        android:isScrollContainer="true"
+        android:maxHeight="180dp"
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sms_send"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <Button
+        android:id="@+id/sms_send"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/sms_typer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Surf Connect</string>
+    <string name="FACEBOOK_APP_ID" translatable="false">2157997927591419</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">9d851edab150af0628716f48441cc9c4</string>
+    <string name="ak_login_protocol_scheme">ak2157997927591419</string>
+    <string name="login_email_label">Login with Email</string>
+    <string name="login_phone_label">Login with Phone Number</string>
+    <string name="account">Account</string>
+    <string name="id_label">Account ID</string>
+    <string name="phone_label">Phone Number</string>
+    <string name="email_label">Email</string>
+    <string name="logout_label">Log Out</string>
+    <string name="msg" formatted="true">123456789</string>
+
+    <string name="verify">Verify</string>
+    <string name="permission">Permisssion</string>
+    <string name="facebooK_account_kit_button">Facebook Account Kit</string>
+    <string name="sms_app_buuton">SMS APP</string>
+    <string name="send">Send</string>
+
+
+</resources>

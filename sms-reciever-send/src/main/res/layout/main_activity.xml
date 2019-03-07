@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/reader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/com_accountkit_button_ok"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/sms_view"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/ak_buttonBackground" />
+
+    <Button
+        android:id="@+id/verification"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/permission"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permission"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/facebook_account_kit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/facebooK_account_kit_button"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/sms_app_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sms_app_buuton"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
