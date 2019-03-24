@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ural Ems</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="like_button">like</string>
+    <string name="love_button">Love</string>
+    <string name="share_button">share</string>
+    <string name="chancel_button">cancel</string>
+</resources>
